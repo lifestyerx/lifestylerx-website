@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Lifestyle RX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"><a href="index.html">Lifestyle RX</a></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top:80px;">
+        <section>
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Services</h2>
+                    <p>Comprehensive offerings designed to meet your unique needs. Whether you're beginning your wellness journey or seeking to elevate your existing routine, we have a program for you.</p>
+                </div>
+
+                <!-- Personal Training -->
+                <div id="training" class="mission" style="margin-bottom:4rem;">
+                    <div>
+                        <img src="images/training.png" alt="Personal Training">
+                    </div>
+                    <div class="text">
+                        <h3>Personal Training</h3>
+                        <p>We provide one‑on‑one and small group training rooted in functional movement, strength development and mobility. Sessions are personalized based on your goals, injury history and preferences.</p>
+                        <ul style="margin-left:1rem; list-style: disc;">
+                            <li>Comprehensive fitness assessments to establish a baseline and measure progress.</li>
+                            <li>Programs designed for weight loss, muscle gain, rehabilitation or athletic performance.</li>
+                            <li>Incorporation of mindfulness and breathing techniques to boost mental focus and reduce stress.</li>
+                            <li>Adjustments for clients living with diabetes, obesity, cardiovascular disease or other chronic conditions.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Nutrition Coaching -->
+                <div id="nutrition" class="mission" style="margin-bottom:4rem;">
+                    <div class="text">
+                        <h3>Nutrition Coaching</h3>
+                        <p>Our holistic nutrition coaching goes beyond meal plans. We teach you how to nourish your body for vitality, longevity and disease prevention.</p>
+                        <ul style="margin-left:1rem; list-style: disc;">
+                            <li>Evidence‑based guidance tailored to your metabolism, lifestyle and health history.</li>
+                            <li>Support for weight management, blood sugar regulation and cardiovascular health.</li>
+                            <li>Meal planning strategies that align with your cultural preferences and busy schedule.</li>
+                            <li>Education on macros, micronutrients and mindful eating to cultivate a healthy relationship with food.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="images/meal.png" alt="Nutrition Coaching">
+                    </div>
+                </div>
+
+                <!-- Holistic Coaching -->
+                <div id="holistic" class="mission">
+                    <div>
+                        <img src="images/spa.png" alt="Holistic Wellness">
+                    </div>
+                    <div class="text">
+                        <h3>Holistic Lifestyle Coaching</h3>
+                        <p>True health extends beyond the gym and kitchen. Our holistic coaching addresses the habits, mindset and environment that support lasting change.</p>
+                        <ul style="margin-left:1rem; list-style: disc;">
+                            <li>Stress management techniques including breath work, meditation and journaling.</li>
+                            <li>Sleep hygiene strategies to enhance recovery and mental clarity.</li>
+                            <li>Accountability systems and habit tracking to keep you consistent and motivated.</li>
+                            <li>Future integration with our holistic clinic for access to nursing and allied health services.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h4>Lifestyle RX</h4>
+                    <p>Holistic training, nutrition and lifestyle coaching to help you heal, grow and transform.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p>Carrollwood Village, FL</p>
+                    <p><a href="mailto:info@lifestylerx.com">info@lifestylerx.com</a></p>
+                    <p>(000) 000‑0000</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © <span id="year-services"></span> Lifestyle RX. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+    document.getElementById('year-services').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
