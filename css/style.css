@@ -1,0 +1,383 @@
+Skip to content
+Navigation Menu
+lifestyerx
+lifestylerx-website
+
+Type / to search
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Files
+Go to file
+t
+README.md
+about.html
+blog.html
+contact.html
+hero.png
+index.html
+meal.png
+services.html
+spa.png
+style.css
+training.png
+lifestylerx-website
+/style.css
+lifestyerx
+lifestyerx
+Add website files
+ede5514
+ · 
+2 days ago
+
+Code
+
+Blame
+341 lines (290 loc) · 4.95 KB
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #2f3e46;
+  background-color: #fdfdfd;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation */
+header {
+  width: 100%;
+  background-color: rgba(255,255,255,0.95);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e2022;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  font-size: 1rem;
+  color: #1e2022;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #3fb0ac;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding-top: 70px; /* offset for fixed header */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/hero.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(0,0,0,0.5), rgba(0,0,0,0.3));
+  z-index: -1;
+}
+
+.hero .content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background-color: #e76f51;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d65a38;
+}
+
+/* Sections */
+section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-title p {
+  max-width: 700px;
+  margin: 0.5rem auto 0;
+  font-size: 1rem;
+  color: #596f7a;
+}
+
+/* Mission section */
+.mission {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+
+.mission img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.mission .text {
+  font-size: 1rem;
+  color: #596f7a;
+}
+
+.mission .text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1e2022;
+}
+
+/* Services section */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-card .card-body {
+  padding: 1.5rem;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #1e2022;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #596f7a;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Blog section */
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.blog-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.blog-card .card-body {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #1e2022;
+}
+
+.blog-card p {
+  font-size: 0.9rem;
+  color: #596f7a;
+  flex: 1;
+}
+
+.blog-card a {
+  margin-top: 1rem;
+  align-self: flex-start;
+  color: #e76f51;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  background-color: #1e2022;
+  color: #f3f3f3;
+  padding: 2rem 0;
+}
+
+footer .footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+footer h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #d1d1d1;
+  margin-bottom: 0.5rem;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li a {
+  font-size: 0.9rem;
+  color: #d1d1d1;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #e76f51;
+}
+
+footer .social {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .social a {
+  color: #d1d1d1;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+footer .social a:hover {
+  color: #e76f51;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #9e9e9e;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .nav-links {
+    gap: 1rem;
+  }
+}
