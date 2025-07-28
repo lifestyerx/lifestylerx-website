@@ -338,4 +338,31 @@ footer .social a:hover {
   .nav-links {
     gap: 1rem;
   }
+  /* Stack navigation items vertically on small screens */
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Show services in a single column */
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+  /* Add space between service cards when stacked */
+  .service-card {
+    margin-bottom: 1.5rem;
+  }
+  /* Stack mission section and center align text and image */
+  .mission {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .mission .text,
+  .mission .image {
+    width: 100%;
+  }
+  /* Stack footer content vertically */
+  footer .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 }
