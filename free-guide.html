@@ -4,24 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Lifestyle RX</title>
+    <title>Free Guide | Lifestyle RX</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
-    /* Additional styles specific to the contact page */
-    .contact-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-        align-items: start;
-    }
-    form {
+    /* Simple form styling for lead capture */
+    .guide-container {
+        max-width: 800px;
+        margin: 0 auto;
         background-color: #fff;
         padding: 2rem;
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        text-align: center;
     }
-    form input, form textarea {
+    .guide-container input {
         width: 100%;
         padding: 0.75rem;
         margin-bottom: 1rem;
@@ -29,11 +26,7 @@
         border-radius: 4px;
         font-family: inherit;
     }
-    form textarea {
-        min-height: 150px;
-        resize: vertical;
-    }
-    form button {
+    .guide-container button {
         background-color: #3fb0ac;
         color: #fff;
         padding: 0.75rem 1.5rem;
@@ -43,19 +36,8 @@
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
-    form button:hover {
+    .guide-container button:hover {
         background-color: #2f8b86;
-    }
-    .contact-info {
-        background-color: #f7f7f7;
-        padding: 2rem;
-        border-radius: 8px;
-    }
-    .contact-info h3 {
-        margin-bottom: 1rem;
-    }
-    .contact-info p {
-        margin-bottom: 0.5rem;
     }
     </style>
 </head>
@@ -69,8 +51,8 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="programs.html">Programs</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="free-guide.html">Free Guide</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="free-guide.html" class="active">Free Guide</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -80,30 +62,22 @@
         <section>
             <div class="container">
                 <div class="section-title">
-                    <h2>Apply to Work Together</h2>
-                    <p>Ready to start your transformation? Complete this quick application so we can learn more about you and see which program is the best fit.</p>
+                    <h2>Get Your Free Guide</h2>
+                    <p>Kickstart your journey with our 3‑Day Starter Guide. Inside you'll learn how to start losing fat and building muscle without counting every calorie.</p>
                 </div>
-                <div class="contact-container">
+                <div class="guide-container">
+                    <p><strong>What you'll get:</strong></p>
+                    <ul style="list-style: disc; text-align:left; margin:1rem auto; max-width:600px;">
+                        <li>Lean Without Counting framework – no food scales required.</li>
+                        <li>7‑day habit tracker to build consistency.</li>
+                        <li>Sample workouts that take 30 minutes or less.</li>
+                        <li>Nutritional guidelines tailored for busy professionals.</li>
+                    </ul>
+                    <p>Enter your email below and we'll send the guide straight to your inbox. Prefer to chat? DM the word <strong>START</strong> on Instagram to @LifestyleRX and we'll deliver it instantly.</p>
                     <form action="mailto:info@lifestylerx.com" method="POST" enctype="text/plain">
-                        <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
-                        <input type="tel" name="phone" placeholder="Phone (optional)">
-                        <textarea name="goals" placeholder="Tell us about your goals and challenges" required></textarea>
-                        <button type="submit">Apply Now</button>
+                        <button type="submit">Send My Guide</button>
                     </form>
-                    <div class="contact-info">
-                        <h3>Get in Touch</h3>
-                        <p><strong>Address:</strong> Carrollwood Village, FL</p>
-                        <p><strong>Email:</strong> <a href="mailto:info@lifestylerx.com">info@lifestylerx.com</a></p>
-                        <p><strong>Phone:</strong> (000) 000‑0000</p>
-                        <p><strong>Follow Us:</strong></p>
-                        <p>
-                            <a href="#" style="color:#3fb0ac; margin-right:0.5rem;">Instagram</a>
-                            <a href="#" style="color:#3fb0ac; margin-right:0.5rem;">Facebook</a>
-                            <a href="#" style="color:#3fb0ac;">YouTube</a>
-                        </p>
-                        <p>If you're local, we can meet in person at a park or community space. For virtual coaching, we serve clients worldwide via video call and messaging support.</p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -135,12 +109,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                © <span id="year-contact"></span> Lifestyle RX. All Rights Reserved.
+                © <span id="year-guide"></span> Lifestyle RX. All Rights Reserved.
             </div>
         </div>
     </footer>
     <script>
-    document.getElementById('year-contact').textContent = new Date().getFullYear();
+    document.getElementById('year-guide').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
